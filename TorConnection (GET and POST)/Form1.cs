@@ -36,7 +36,7 @@ namespace TorConnection__GET_and_POST_
             Thread.Sleep(20000);
             int connect_index = library.addTor("proxy", "app.swagbucks.com", 80);
             Thread.Sleep(10000);
-            TORLibrary.proxy_socks[connect_index].send("GET /?cmd=apm-1&emailAddress=geekables@yahoo.com&pswd=Haha9406 HTTP/1.1\r\n" +
+            TORLibrary.proxy_socks[connect_index].send("GET /?cmd=apm-1&emailAddress= HTTP/1.1\r\n" +
             "Host: app.swagbucks.com\r\n" +
             "User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:31.0) Gecko/20100101 Firefox/31.0\r\n\r\n");
             Regex regex = new Regex("\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}", RegexOptions.Multiline);
